@@ -72,7 +72,7 @@ function App() {
         </Grid>
 
         {/* Gráfico */}
-        <Grid sx={{ display: { xs: "none", md: "block"} }}>
+        <Grid size={{ xs: 6, md: 6 }} sx={{ display: { xs: "none", md: "block" } }}>
           <ChartUI
             data={dataFetcherOutput.data}
             loading={dataFetcherOutput.loading}
@@ -81,7 +81,7 @@ function App() {
         </Grid>
 
         {/* Tabla */}
-        <Grid sx={{ display: { xs: "none", md: "block" } }}>
+        <Grid size={{ xs: 6, md: 6 }} sx={{ display: { xs: "none", md: "block" } }}>
           <TableUI
             data={dataFetcherOutput.data}
             loading={dataFetcherOutput.loading}
